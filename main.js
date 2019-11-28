@@ -9,13 +9,11 @@ var meridian = '';
 
 if (hours >= 12){
 	meridian = 'PM';
-	hours = hours - 12;
 } else {
 	meridian = 'AM';
-	hours = 12 - hours;
 }
 
-//hours = hours - 12;
+hours = hours - 12;
 
 if (hours < 10){
 	hours = '0' + hours;
