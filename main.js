@@ -5,15 +5,18 @@ var currentTime = new Date();
 var hours = currentTime.getHours();
 var minutes = currentTime.getMinutes();
 var seconds = currentTime.getSeconds();
+var noon = 12;
 var meridian = '';
 
-if (hours >= 12){
+if (hours >= noon){
 	meridian = 'PM';
 } else {
 	meridian = 'AM';
 }
-
-hours = hours - 12;
+	
+if (hours > noon){
+	hours = hours - 12;
+}
 
 if (hours < 10){
 	hours = '0' + hours;
