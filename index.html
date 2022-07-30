@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>City Time</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<div class="cityimg">
-		<img id="currentcity" src="img/Lagos.jpg">
+		<img id="currentcity" src="">
 	</div>
 
 	<div class="tmbody">
-		<h1>Current city is <span id="city">Lagos</span></h1>
+		<h1>Selected city is <span id="city"></span></h1>
 		
 		<!--Display Clock Timer-->
 		<h2 id="clock"></h2>
 
 		<!--Inline display button of cities-->
 		<div class="loc_hd">
-			<button class="loc" id="la">Lagos</button>
-			<button class="loc" id="ny" href="#">New York</button>
-			<button class="loc" id="ln" href="#">London</button>
-			<button class="loc" id="di" href="#">Dubai</button>
+			<button class="loc" onclick="displayInfo(data[0].city, data[0].brief, data[0].image)">Lagos</button>
+			<button class="loc" onclick="displayInfo(data[1].city, data[1].brief, data[1].image)">New York</button>
+			<button class="loc" onclick="displayInfo(data[2].city, data[2].brief, data[2].image)">London</button>
+			<button class="loc" onclick="displayInfo(data[3].city, data[3].brief, data[3].image)">Dubai</button>
 		</div>
 
 		<!--Brief writeup about selected city-->
 		<div>
-			<p id="citybrief">Lagos, Nigeria's largest city, sprawls inland from the Gulf of Guinea across Lagos Lagoon. Victoria Island, the financial center of the metropolis, is known for its beach resorts, boutiques and nightlife. To the north, Lagos Island is home to the National Museum Lagos, displaying cultural artifacts and craftworks. Nearby is Freedom Park, once a colonial-era prison and now a major venue for concerts and public events.</p>
+			<p id="citybrief"></p>
 		</div>
 	</div>
 
