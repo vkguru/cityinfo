@@ -37,7 +37,7 @@ function showTime() {
 
 	// Seconds counter
 	let oneSecond = 1000;
-		// setInterval(showTime, oneSecond);
+		setInterval(showTime, oneSecond);
 };
 
 showTime();

@@ -87,22 +87,3 @@ h1 {
 		height: auto;
 	}
 }
-
-
-/* @media screen and (max-width:992px){
-	#currentcity{
-		width: 100%;
-		height: 50%;
-	}
-
-
-	.tmbody{
-		width: 100%;
-		height: 50%;
-	}
-
-	#citybrief{
-		font-size: 40px;
-		line-height: 45px;
-	}
-} */
